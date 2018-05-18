@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/aquarium"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.firstapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalan Süre: "
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtZaman"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="SKOR"
+        android:textStyle="bold"
+        android:textColor="#827717"
+        android:gravity="center"
+        android:id="@+id/txtSkor"
+        android:textSize="25dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imgOrta"
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/imgOrtaSol"
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/imgOrtaAltSol"
+        android:layout_below="@+id/imgOrtaUst"
+        android:src="@drawable/fish" />
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/imgOrtaSag"
+        android:layout_toRightOf="@id/imgOrta"
+        android:layout_centerVertical="true"
+        android:onClick="FishPress"
+        android:src="@drawable/fish"
+        android:layout_height="100dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:src="@drawable/fish"
+        android:id="@+id/imgOrtaUst"
+        android:layout_above="@id/imgOrta"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgOrtaUstSol"
+        android:onClick="FishPress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imgOrtaUst"
+        android:layout_toStartOf="@+id/imgOrtaUst"
+        android:src="@drawable/fish" />
+    <ImageView
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:id="@+id/imgOrtaUstSag"
+        android:src="@drawable/fish"
+        android:layout_toRightOf="@id/imgOrtaUst"
+        android:layout_above="@id/imgOrtaSag"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:src="@drawable/fish"
+        android:id="@+id/imgOrtaAlt"
+        android:layout_below="@id/imgOrta"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="FishPress"
+        android:id="@+id/imgOrtaAltSol"
+        android:src="@drawable/fish"
+        android:layout_below="@id/imgOrtaSol"
+        android:layout_toLeftOf="@id/imgOrtaAlt"
+        />
+    <ImageView
+        android:id="@+id/imgOrtaAltSag"
+        android:layout_width="100dp"
+        android:onClick="FishPress"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgOrtaSag"
+        android:src="@drawable/fish"
+        android:layout_toRightOf="@id/imgOrtaAlt"
+        />
+</RelativeLayout>
