@@ -1,0 +1,20 @@
+cd --> Dizine gider.
+ls --> Dizini listeler.
+ls -a --> Gizli dosyalarý gösterir.
+pwd --> Bulunduðu dizini gösterir.
+
+git init --> .git repository oluþturur.
+git --version --> git versiyonunu gösterir.
+git add dosya_adi --> Belirtilen dosyayý ekleme yapar.
+git add.--> Tüm dosyalarý ekler.
+git push 
+git status --> Bulunduðun konumdaki deðiþikleri gösterir.
+git pull
+git log --> Yapýlan komutlarý listeler.
+git commit --ammend -m "Deðiþtir" --> Yapýlan son commit deðiþtirildi.
+git commit -m --> Mesaj ekleyerek Commit iþlemi yapar.
+git commit -a -m "mesaj" --> Hem ekleme hemde Commit iþlemini ayný anda yapar. 
+git checkout commitnumarasý --> Önceki commit sürümüne geri gitmenizi saðlar. 
+git checkout master --> En son commit sürümünüze gitmenizi saðlar. 
+git remote add origin https://github.com/bilaloz/fishgame.git kopyaladýðýngithubadresi
+git push -u origin master --force //depoya gönderir
